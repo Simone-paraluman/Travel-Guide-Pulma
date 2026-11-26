@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Travel Guide </title>
+</head>
+<style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #ffe9ae; 
+            padding: 30px; 
+        } 
+ 
+        h1 { 
+            text-align: center; 
+            color: #ce9928; 
+        } 
+ 
+        /* MAIN MENU */ 
+        .menu { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            background-color: #fff09a; 
+            padding: 20px; 
+            border-radius: 12px; 
+        } 
+ 
+        /* MENU ITEMS */ 
+        .menu-item { 
+            position: relative; 
+        } 
+ 
+        .menu a { 
+            display: block; 
+            background-color: #05036b; 
+            color: white; 
+            padding: 12px 20px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            transition: 0.3s ease; 
+        } 
+ 
+        /* HOVER EFFECT */ 
+        .menu a:hover { 
+            background-color: #80b3ff; 
+            color: #222; 
+            transform: translateY(-5px); 
+            box-shadow: 0 0 10px #11217c, 
+                        0 0 25px #0ff; 
+        } 
+ 
+        /* SUBMENU */ 
+        .submenu { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            min-width: 160px; 
+            background-color: #234d9b; 
+            padding: 8px; 
+            border-radius: 8px; 
+            z-index: 10; 
+        } 
+ 
+        /* SHOW SUBMENU WHEN HOVERED */ 
+        .menu-item:hover .submenu { 
+            display: block; 
+        } 
+ 
+        /* SUBMENU LINKS */ 
+        .submenu a { 
+            background-color: #ffb18d; 
+            margin: 5px 0; 
+            border-radius: 5px; 
+        } 
+ 
+        .submenu a:hover { 
+            background-color: #f696ff; 
+            transform: translateX(5px); 
+        } 
+ 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <h1>Where Every Island Tells A Story</h1> 
+ 
+    <nav class="menu"> 
+ 
+        <!-- HOME --> 
+        <div class="menu-item"> 
+            <a href="#">Home</a> 
+            <div class="submenu"> 
+                <a href="homepage_pulma.html">Welcome</a> 
+                <a href="touristdest_pulma.html">Featured Destinations</a> 
+            </div> 
+        </div> 
+ 
+        <!-- ABOUT --> 
+        <div class="menu-item"> 
+            <a href="#">About</a> 
+            <div class="submenu"> 
+                <a href="#">About The Philippines</a> 
+                <a href="#">Our Culture</a> 
+            </div> 
+        </div> 
+ 
+        <!-- GALLERY --> 
+        <div class="menu-item"> 
+            <a href="#">Gallery</a> 
+            <div class="submenu"> 
+                <a href="#">Tourist Destinations</a> 
+                <a href="photocollection_pulma.html">Photo Collection</a> 
+            </div> 
+        </div> 
+ 
+        <!-- CONTACT --> 
+        <div class="menu-item"> 
+            <a href="#">Contact</a> 
+            <div class="submenu"> 
+                <a href="message_pulma.html">Send A Message</a> 
+                <a href="#">Our Contact Information</a> 
+            </div> 
+        </div> 
+ 
+    </nav>
+</body>
+</html>
