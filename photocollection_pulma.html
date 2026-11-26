@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collection</title>
+</head>
+<style> 
+ 
+    body { 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        text-align: center; 
+        background-color: rgb(252, 196, 222); 
+    } 
+ 
+    h1 { 
+        color: rgb(184, 90, 137); 
+        font-family: "Lucida Console", "Courier New", monospace;
+    } 
+ 
+    img { 
+        width: 500px; 
+        height: 300px; 
+        border: 5px solid white; 
+        border-radius: 15px; 
+ 
+        /* Smooth effect */ 
+        transition: 0.5s; 
+ 
+        /* Default filter */ 
+        filter: none; 
+    } 
+ 
+    /* Zoom when hovering */ 
+    img:hover { 
+        transform: scale(1.05); 
+    } 
+ 
+    button { 
+        padding: 10px 20px; 
+        margin: 5px; 
+        cursor: pointer; 
+        background-color: rgb(240, 130, 167); 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+    } 
+ 
+    button:hover { 
+        background-color: rgb(255, 167, 211); 
+    } 
+ 
+</style> 
+<body>
+    <script>
+        
+    document.writeln("<h1 align='center'>Photo Collection</h1>"); 
+    document.write("<center>")
+
+document.writeln("<img id='gallery' src='philippine.jpg'>"); 
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='cebu.jpg'\">CEBU</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='bohol.jpg'\">BOHOL</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='baguio.jpg'\">BAGUIO</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='intramuros.jpg'\">INTRAMUROS</button>"); 
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='blur(5px)'\">BLUR</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='grayscale(100%)'\">GRAYSCALE</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='brightness(150%)'\">BRIGHTNESS</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='sepia(100%)'\">SEPIA</button>");
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='none'\">NORMAL</button>"); 
+    </script>
+</body>
+</html>
